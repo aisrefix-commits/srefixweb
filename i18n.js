@@ -107,12 +107,12 @@
       'quickstart.cta':              '查看完整文档 ›',
 
       'final.title':                 '把诊断时间从小时变成分钟。',
-      'final.sub':                   '开源 · MIT 许可 · 本地运行 · 不锁厂商。',
+      'final.sub':                   '开源 · Apache 2.0 · 本地运行 · 不锁厂商。',
       'final.cta.github':            '在 GitHub 上查看 ›',
 
       'footer.tagline':              'AI 驱动的 SRE 诊断套件。',
       'footer.repo':                 'GitHub 仓库',
-      'footer.license':              'MIT 许可',
+      'footer.license':              'Apache 2.0',
       'footer.copyright':            '© 2026 srefix-diagnosis 贡献者。',
     },
 
@@ -197,12 +197,12 @@
       'quickstart.cta':              'Read the full docs ›',
 
       'final.title':                 'Diagnoses in minutes, not hours.',
-      'final.sub':                   'Open source · MIT licensed · Runs locally · No vendor lock-in.',
+      'final.sub':                   'Open source · Apache 2.0 · Runs locally · No vendor lock-in.',
       'final.cta.github':            'View on GitHub ›',
 
       'footer.tagline':              'An AI-powered SRE diagnosis toolkit.',
       'footer.repo':                 'GitHub repo',
-      'footer.license':              'MIT license',
+      'footer.license':              'Apache 2.0',
       'footer.copyright':            '© 2026 srefix-diagnosis contributors.',
     },
 
@@ -287,12 +287,12 @@
       'quickstart.cta':              'ドキュメントを読む ›',
 
       'final.title':                 '診断は数時間ではなく数分で。',
-      'final.sub':                   'OSS · MIT ライセンス · ローカル実行 · ベンダーロックインなし。',
+      'final.sub':                   'OSS · Apache 2.0 · ローカル実行 · ベンダーロックインなし。',
       'final.cta.github':            'GitHub を見る ›',
 
       'footer.tagline':              'AI 駆動の SRE 診断ツールキット。',
       'footer.repo':                 'GitHub リポジトリ',
-      'footer.license':              'MIT ライセンス',
+      'footer.license':              'Apache 2.0',
       'footer.copyright':            '© 2026 srefix-diagnosis コントリビューター。',
     },
 
@@ -377,12 +377,12 @@
       'quickstart.cta':              '전체 문서 읽기 ›',
 
       'final.title':                 '진단을 시간이 아닌 분 단위로.',
-      'final.sub':                   '오픈 소스 · MIT 라이선스 · 로컬 실행 · 벤더 락인 없음.',
+      'final.sub':                   '오픈 소스 · Apache 2.0 · 로컬 실행 · 벤더 락인 없음.',
       'final.cta.github':            'GitHub에서 보기 ›',
 
       'footer.tagline':              'AI 기반 SRE 진단 툴킷.',
       'footer.repo':                 'GitHub 저장소',
-      'footer.license':              'MIT 라이선스',
+      'footer.license':              'Apache 2.0',
       'footer.copyright':            '© 2026 srefix-diagnosis 기여자들.',
     },
 
@@ -467,12 +467,12 @@
       'quickstart.cta':              'Leer la documentación completa ›',
 
       'final.title':                 'Diagnósticos en minutos, no horas.',
-      'final.sub':                   'Código abierto · Licencia MIT · Ejecuta localmente · Sin vendor lock-in.',
+      'final.sub':                   'Código abierto · Apache 2.0 · Ejecuta localmente · Sin vendor lock-in.',
       'final.cta.github':            'Ver en GitHub ›',
 
       'footer.tagline':              'Un kit de diagnóstico SRE impulsado por IA.',
       'footer.repo':                 'Repositorio GitHub',
-      'footer.license':              'Licencia MIT',
+      'footer.license':              'Apache 2.0',
       'footer.copyright':            '© 2026 colaboradores de srefix-diagnosis.',
     },
   };
