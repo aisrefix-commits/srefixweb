@@ -157,6 +157,19 @@
   transform: translateY(-2px);
 }
 
+.arch-card-final {
+  background: linear-gradient(135deg,
+    rgba(0, 113, 227, 0.18) 0%,
+    rgba(157, 107, 255, 0.14) 100%);
+  border-color: rgba(94, 142, 255, 0.32);
+}
+.arch-card-final:hover {
+  background: linear-gradient(135deg,
+    rgba(0, 113, 227, 0.24) 0%,
+    rgba(157, 107, 255, 0.18) 100%);
+}
+.arch-card-final .arch-num { color: #c4b1ff; }
+
 .arch-num {
   display: inline-block;
   font-size: 13px;

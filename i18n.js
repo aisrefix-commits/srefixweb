@@ -81,6 +81,8 @@
       'arch.box.diagnosis.desc':     '250+ 智能体,每个负责一种技术栈。诊断 → 给出具体命令 / SQL / 修复步骤。',
       'arch.box.verify.title':       'Verify',
       'arch.box.verify.desc':        '保证每个智能体里引用的指标名、PromQL 在你环境里真实存在。',
+      'arch.box.claude.title':       'Claude',
+      'arch.box.claude.desc':        'LLM 把各智能体返回的证据、命令与修复步骤汇成一段可读的诊断结论:根因、影响面、回滚或修复建议。',
 
       'quickstart.eyebrow':          '快速开始',
       'quickstart.title':            '一行命令接入 Claude。',
@@ -158,6 +160,8 @@
       'arch.box.diagnosis.desc':     '250+ agents, one per tech. Diagnoses → returns concrete commands, SQL, or fix steps.',
       'arch.box.verify.title':       'Verify',
       'arch.box.verify.desc':        'Validates that every metric name and PromQL referenced in agents actually exists in your environment.',
+      'arch.box.claude.title':       'Claude',
+      'arch.box.claude.desc':        'The LLM synthesizes evidence, commands, and fix steps from every agent into a human-readable verdict: root cause, blast radius, and recommended rollback or fix.',
 
       'quickstart.eyebrow':          'Quick start',
       'quickstart.title':            'One command to plug into Claude.',
@@ -235,6 +239,8 @@
       'arch.box.diagnosis.desc':     '250+ のエージェント、1 技術につき 1 体。診断 → 具体的なコマンド・SQL・修正手順を返します。',
       'arch.box.verify.title':       'Verify',
       'arch.box.verify.desc':        'エージェントで参照されるすべてのメトリクス名と PromQL があなたの環境に実在することを検証。',
+      'arch.box.claude.title':       'Claude',
+      'arch.box.claude.desc':        'LLM が各エージェントから返された証拠・コマンド・修正手順を、人間が読める診断結論に統合します:根本原因、影響範囲、ロールバックまたは修正の推奨。',
 
       'quickstart.eyebrow':          'クイックスタート',
       'quickstart.title':            '1 行で Claude に接続。',
@@ -312,6 +318,8 @@
       'arch.box.diagnosis.desc':     '250+ 에이전트, 기술당 하나. 진단 → 구체적인 명령어, SQL, 수정 절차를 반환.',
       'arch.box.verify.title':       'Verify',
       'arch.box.verify.desc':        '에이전트가 참조하는 모든 지표명과 PromQL이 실제 환경에 존재하는지 검증.',
+      'arch.box.claude.title':       'Claude',
+      'arch.box.claude.desc':        'LLM이 각 에이전트가 반환한 증거, 명령, 수정 절차를 사람이 읽을 수 있는 진단 결론으로 합성합니다: 근본 원인, 영향 범위, 롤백 또는 수정 권장.',
 
       'quickstart.eyebrow':          '빠른 시작',
       'quickstart.title':            '한 줄로 Claude에 연결.',
@@ -389,6 +397,8 @@
       'arch.box.diagnosis.desc':     '250+ agentes, uno por tecnología. Diagnostica → devuelve comandos, SQL o pasos de fix concretos.',
       'arch.box.verify.title':       'Verify',
       'arch.box.verify.desc':        'Valida que cada nombre de métrica y PromQL referenciado por los agentes existe realmente en tu entorno.',
+      'arch.box.claude.title':       'Claude',
+      'arch.box.claude.desc':        'El LLM sintetiza la evidencia, los comandos y los pasos de fix de cada agente en un veredicto legible: causa raíz, alcance del impacto, y rollback o fix recomendado.',
 
       'quickstart.eyebrow':          'Inicio rápido',
       'quickstart.title':            'Un comando para conectar Claude.',
