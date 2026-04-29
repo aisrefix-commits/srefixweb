@@ -214,35 +214,46 @@
   <section class="spotlight spotlight-dark" id="architecture">
     <div class="spotlight-inner">
       <p class="eyebrow" data-i18n="arch.eyebrow">架构</p>
-      <h2 class="spotlight-title" data-i18n="arch.title">一套 MCP 服务,组合出诊断流水线。</h2>
-      <p class="spotlight-sub" data-i18n="arch.sub">Discovery 找到资产,Explorer 编排排障,Verify 校验指标名,各 Diagnosis 智能体输出实操建议。一切跑在你本地,数据不出门。</p>
+      <h2 class="spotlight-title" data-i18n="arch.title">Claude 在最上面,四层工具按需调用。</h2>
+      <p class="spotlight-sub" data-i18n="arch.sub">不是流水线 —— Claude 根据问题动态决定调哪层、调几次。一切跑在你本地,数据不出门。</p>
+
+      <div class="arch-claude">
+        <span class="arch-tag" data-i18n="arch.claude.label">编排者</span>
+        <h3 data-i18n="arch.claude.title">Claude</h3>
+        <p data-i18n="arch.claude.desc">读你的问题,挑工具,权衡证据,给出最终结论:根因、影响面、具体的修复或回滚建议。</p>
+      </div>
+
+      <div class="arch-arrow" aria-hidden="true">
+        <span></span>
+      </div>
 
       <div class="arch-grid">
         <div class="arch-card">
-          <span class="arch-num">01</span>
-          <h3 data-i18n="arch.box.discovery.title">Discovery</h3>
-          <p data-i18n="arch.box.discovery.desc">从 9 个云、K8s、Consul、Nacos 等 30+ 来源自动发现服务与主机。</p>
+          <span class="arch-num" data-i18n="arch.box.knowledge.label">知识层</span>
+          <h3 data-i18n="arch.box.knowledge.title">250 个 diag-{tech} 智能体</h3>
+          <p data-i18n="arch.box.knowledge.desc">每个技术一个 MCP —— postgres / kafka / istio / k8s / …。各自内置该技术的故障模式、关键指标、排障套路。</p>
         </div>
         <div class="arch-card">
-          <span class="arch-num">02</span>
-          <h3 data-i18n="arch.box.explorer.title">Explorer</h3>
-          <p data-i18n="arch.box.explorer.desc">把你的告警/工单展开成依赖图,挑出该问的那几个智能体。</p>
+          <span class="arch-num" data-i18n="arch.box.reasoning.label">推理层</span>
+          <h3 data-i18n="arch.box.reasoning.title">srefix-explorer</h3>
+          <p data-i18n="arch.box.reasoning.desc">manual 没命中时的兜底,加上跨技术依赖扇出,把藏在上游的根因挖出来。</p>
         </div>
         <div class="arch-card">
-          <span class="arch-num">03</span>
-          <h3 data-i18n="arch.box.diagnosis.title">Diagnosis</h3>
-          <p data-i18n="arch.box.diagnosis.desc">250+ 智能体,每个负责一种技术栈。诊断 → 给出具体命令 / SQL / 修复步骤。</p>
+          <span class="arch-num" data-i18n="arch.box.discovery.label">发现层</span>
+          <h3 data-i18n="arch.box.discovery.title">srefix-discovery</h3>
+          <p data-i18n="arch.box.discovery.desc">5 层共 33 个适配器 —— 云、K8s、注册中心、集群直连、VM 标签。找到你的服务和主机。</p>
         </div>
         <div class="arch-card">
-          <span class="arch-num">04</span>
-          <h3 data-i18n="arch.box.verify.title">Verify</h3>
-          <p data-i18n="arch.box.verify.desc">保证每个智能体里引用的指标名、PromQL 在你环境里真实存在。</p>
+          <span class="arch-num" data-i18n="arch.box.telemetry.label">遥测与执行</span>
+          <h3 data-i18n="arch.box.telemetry.title">prom · loki · es · jumphost</h3>
+          <p data-i18n="arch.box.telemetry.desc">智能体拉真实证据的地方:PromQL、LogQL、Elasticsearch,以及带安全网关的 SSH-via-bastion 命令执行。</p>
         </div>
-        <div class="arch-card arch-card-final">
-          <span class="arch-num">05</span>
-          <h3 data-i18n="arch.box.claude.title">Claude</h3>
-          <p data-i18n="arch.box.claude.desc">LLM 把各智能体返回的证据、命令与修复步骤汇成一段可读的诊断结论:根因、影响面、回滚或修复建议。</p>
-        </div>
+      </div>
+
+      <div class="arch-preflight">
+        <span class="arch-tag-soft" data-i18n="arch.preflight.label">预检 · 离线</span>
+        <h4 data-i18n="arch.preflight.title">Verify</h4>
+        <p data-i18n="arch.preflight.desc">独立工具。首次接入前跑一遍 —— 把智能体里引用的所有指标名、PromQL 跟真实 exporter 白名单对一遍,找出口径不一致。</p>
       </div>
     </div>
   </section>
